@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
