@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
 
 
 @Component({
@@ -8,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class Grafica1Component {
-  public labels1: string[] = ['Pan', 'Bebida', 'Dulces'];
-  public data1 = [
-    [350, 450, 100],
 
+  public labels1: string[] = ['Pan', 'Refresco', 'Tacos'];
+  public data1 = [
+    [10, 15, 40],
   ];
+
 }

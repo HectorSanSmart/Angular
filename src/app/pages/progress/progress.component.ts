@@ -3,26 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-progress',
   templateUrl: './progress.component.html',
-  styleUrls: [
-    './progress.component.css'
-  ]
+  styleUrls: [ './progress.component.css' ]
 })
-export class ProgressComponent {
+export class ProgressComponent  {
 
-  progreso1: number = 25;
-  progreso2: number = 35;
+    progreso1: number = 25;
+    progreso2: number = 35;
 
-  get getProgreso1() {
+    get getProgreso1() {
+      return `${ this.progreso1 }%`;
+    }
 
-    return `${this.progreso1}%`;
+    get getProgreso2() {
+      return `${ this.progreso2 }%`;
+    }
 
-  }
-
-  cambioValorHijo(valor: any) {
-    console.log('Heyy', valor);
-  }
-
-  get getProgreso2() {
-    return `${this.progreso2}%`;
-  }
 }
